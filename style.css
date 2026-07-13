@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.commonGradient{
+  background: linear-gradient(to right, #0d6efd, #0a64ca);
+}
+
+.category{
+    border-radius: 15px; 
+    background-color: rgba(127, 255, 212, 0.448); color: green; 
+    padding: 8px; 
+    font-weight: bold;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.026);
+}
+
+
+footer ul li:hover{
+    background-color: blue;
+}

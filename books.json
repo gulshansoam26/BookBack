@@ -1,0 +1,89 @@
+{
+  "books": [
+    {
+      "title": "Physics NCERT",
+      "author": "NCERT",
+      "category": "Science",
+      "status": "Available",
+      "contact": "9876543210",
+      "image": "images/Physics.jpg",
+      "id": "R_1SPliElWY"
+    },
+    {
+      "title": "History",
+      "author": "NCERT",
+      "category": "Others",
+      "status": "Available",
+      "contact": "8876543610",
+      "image": "images/History.webp",
+      "id": "Cx9Z4niILxo"
+    },
+    {
+      "title": "Law",
+      "author": "Vikram Sen",
+      "category": "Entrance",
+      "status": "Available",
+      "contact": "7876543219",
+      "image": "images/Law_entrance.jpg",
+      "id": "QZEsZdQ5UY0"
+    },
+    {
+      "title": "Astronomy Physics",
+      "author": "Steven D. Bloom",
+      "category": "Fiction",
+      "status": "Available",
+      "contact": "7646463637",
+      "image": "images/Physics_fiction.jpg",
+      "id": "lPow52f4ZbI"
+    },
+    {
+      "title": "Maths",
+      "author": "Dr. DK Goyal",
+      "category": "Entrance",
+      "status": "Available",
+      "contact": "9877543210",
+      "image": "images/IIt_entrance.jpg",
+      "id": "AiE4Optp7q8"
+    },
+    {
+      "title": "Diary Of Martian",
+      "author": "Stephen B. Haunts",
+      "category": "Fiction",
+      "status": "Available",
+      "contact": "6876548210",
+      "image": "images/Fiction.jpg",
+      "id": "zRTwi6U48og"
+    },
+    {
+      "title": "Harry Potter",
+      "author": "JK Rowling",
+      "category": "fiction",
+      "contact": "8718198199",
+      "image": "https://up.yimg.com/ib/th/id/OIP.UepiTQvRQPnY4eT2J3r4uQHaKw?pid=Api&rs=1&c=1&qlt=95&w=81&h=117",
+      "donor": "Gaurav",
+      "status": "available",
+      "id": "a9E2kkZmEGw"
+    },
+    {
+      "title": "NDA",
+      "author": "pathfinder",
+      "category": "entrance",
+      "contact": "8781878388",
+      "image": "https://cdn.shopaccino.com/boookart/products/whatsapp-image-2022-01-03-at-83023-pm-630188_l.jpeg?v=440?param=1",
+      "donor": "Raman",
+      "status": "available",
+      "id": "5C-DIzxXoac"
+    },
+    {
+      "title": "polity book",
+      "author": "ncert",
+      "category": "others",
+      "contact": "9768478473",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.fRHH6cgH0eDEjHp1o4R2CQHaJr?pid=Api",
+      "donor": "Gulshan",
+      "status": "available",
+      "id": "exPv8a05yFw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

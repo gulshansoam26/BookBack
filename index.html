@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary fw-bold fs-1 d-flex align-items-center" href="index.html">
+                <img src="images/logo.jpg" alt="BookBack" width="100" height="80" class="me-2" />
+                <span >BookBack</span>
+                    
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="#addBook">Add Book</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary fw-bold" href="#books">All Books</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="text-white  align-items-center justify-content-center commonGradient">
+    <div class="p-5" style="text-align: center;">
+        <h2>Exchange & Donate Books Locally</h2>
+        <p>Find and share second-hand books easily with people around you</p>
+        <div class="btn btn-light text-primary fw-bold"><a href="#books" style="text-decoration: none;"><i class="fa-solid fa-book"></i>Browse Books</a>
+        </div>
+    </div>
+</section>
+
+       <section id="filter" class="container-md my-4 ">
+        <div class="row p-3 border rounded  bg-light shadow-sm gap-2 ">
+            <input id="search" type="text" class="col-3 me-3" placeholder="Search books by title...">
+            <!-- <select id="filterBook" class=" col-3 col-lg-5">
+                            <option value="">All Categories</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="science">Science</option>
+                            <option value="entrance">Entrance</option>
+                            <option value="others">Others</option>
+            </select> -->
+            <button id="fictionFilter" type="button" class="col-2   border rounded bg-primary text-white fw-bold fs-5 p-2 commonGradient">Fiction</button>
+            <button id="scienceFilter" type="button" class="col-2  border rounded bg-primary text-white fw-bold fs-5 p-2 commonGradient">Science</button>
+            <button id="entranceFilter" type="button" class="col-2  border rounded bg-primary text-white fw-bold fs-5 p-2 commonGradient">Entrance</button>
+            <button id="othersFilter" type="button" class="col-2  border rounded bg-primary text-white fw-bold fs-5 p-2 commonGradient">Others</button>
+        </div>
+        </section>
+
+        <section id="books" class="container-md my-4">
+            <h3 class="text-primary fw-bold">Available Books</h3>
+           <div class="row g-3 grid">
+                    <!-- <div class="col-6 col-lg-4" >
+                         <div class="card shadow-sm bg-light border 0">
+                            <img src="images/Physics.jpg"  alt="physics_ncert" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"> Physics NCERT</h5>
+                                    <p >Author: NCERT</p>
+                                <p><span class="category">Science</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 9876543210</p>
+                                </div>
+                        </div>
+                    </div>
+                        
+
+                    <div  class="col-6 col-lg-4">
+                         <div class="card shadow-sm bg-light 
+                        border 0">
+                            <img src="images/History.webp"  alt="history" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"> History</h5>
+                                    <p >Author: NCERT</p>
+                                <p><span class="category">Others</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 8876543610</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                         <div class="card shadow-sm bg-light
+                        border 0">
+                            <img src="images/Law_entrance.jpg"  alt="law_entrance" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"> Law</h5>
+                                    <p >Author: Vikram Sen</p>
+                                <p><span class="category">Entrance</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 7876543219</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div  class="col-6 col-lg-4">
+                         <div class="card shadow-sm bg-light 
+                        border 0">
+                            <img src="images/Physics_fiction.jpg"  alt="Physics fiction" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"> Astronomy Physics</h5>
+                                    <p >Author: Steven D. Bloom</p>
+                                <p><span class="category">Fiction</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 7646463637</p>
+                                </div>
+                        </div>
+                    </div>
+
+                     <div  class="col-6 col-lg-4">
+                         <div class="card shadow-sm bg-light 
+                        border 0">
+                            <img src="images/IIt_entrance.jpg"  alt="iit_entrance" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title"> Maths</h5>
+                                    <p >Author: Dr. DK Goyal</p>
+                                <p><span class="category">Entrance</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 9877543210</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div  class="col-6 col-lg-4">
+                         <div class="card shadow-sm bg-light 
+                        border 0">
+                            <img src="images/Fiction.jpg"  alt="Martian" style=" object-fit: contain; height: 200px;" >
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Diary Of Martian</h5>
+                                    <p >Author: Stephen B. Haunts</p>
+                                <p><span class="category">Fiction</span></p>
+                                <p class="text-success">Available</p>
+                                <p>Contact: 6876548210</p>
+                                </div>
+                        </div>
+                    </div>    -->
+            </div>
+        </section>
+
+        <section id="addBook" class="container-md my-4">
+            <h3 class="text-primary fw-bold"><i class="fa-solid fa-square-plus"></i>Add a Book</h3>
+            <p>List your book for exchange or donation.</p>
+            <form class="mb-4 p-4 bg-light rounded">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                         <label for="book-title" class="form-label">Book Title </label>
+                        <input type="text" class="form-control" id="book-title" placeholder="Enter book title">
+                    </div>
+                    <div class="col-md-6">
+                         <label for="author" class="form-label">Author </label>
+                        <input type="text" class="form-control" id="author"  placeholder="Enter author name">
+                    </div>
+                     <div class="col-md-6">
+                        <label for="category" class="form-label">Category</label>
+                        <select id="category" class="form-select">
+                            <option value="">Select Category</option>
+                            <option value="science">Science</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="entrance">Entrance</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="text" maxlength="10"  class="form-control" id="contact" placeholder="Enter contact number.">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="image" class="form-label">Image Url</label>
+                        <input type="text" class="form-control" id="image" placeholder="enter image url">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="donor" class="form-label">Donor Name</label>
+                        <input type="text" class="form-control" id="donor" placeholder="Enter Donor name">
+                    </div>
+                    
+                    <div col-md-2 >
+                       <button id="submitBtn" type="submit" class="btn btn-primary   fw-bold commonGradient" >Submit Book</button>
+                    </div>
+                    
+                </div>
+            </form>   
+
+        </section>
+    </main>
+    <footer class="d-flex bg-secondary py-3 text-white justify-content-around align-items-center">
+        <p>&copy2026 BookBack All rights reserved</p>
+        <ul class="list-unstyled d-flex fw-bold gap-3" >
+                <li><a class="text-white fs-5" href="#"><i class="fa-brands fa-facebook"></i></a ></li>
+                <li><a class="text-white fs-5" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="text-white fs-5" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+    </footer> 
+</body>
+</html>
