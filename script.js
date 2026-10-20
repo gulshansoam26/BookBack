@@ -42,10 +42,8 @@ async function getBooks() {
 
 
  
-document.getElementById("search").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
+document.getElementById("search").addEventListener("input", (e) => {
     filterBook(""); // use existing category
-  }
 });
 
 

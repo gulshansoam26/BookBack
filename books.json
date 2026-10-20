@@ -83,6 +83,16 @@
       "donor": "Gulshan",
       "status": "available",
       "id": "exPv8a05yFw"
+    },
+    {
+      "title": "polity book",
+      "author": "ncert",
+      "category": "entrance",
+      "contact": "9768478473",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.fRHH6cgH0eDEjHp1o4R2CQHaJr?pid=Api",
+      "donor": "Gulshan",
+      "status": "available",
+      "id": "U939C6tpMaQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
